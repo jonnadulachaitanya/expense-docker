@@ -1,4 +1,4 @@
-FROM nginx:20.0
+FROM nginx
 COPY code /usr/share/nginx/html
 COPY expense.conf /etc/nginx/default.d/
 
