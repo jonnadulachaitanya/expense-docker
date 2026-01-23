@@ -9,7 +9,7 @@ services:
     image: chaitanyaj293/mysql:v1
     container_name: mysql
     volumes:
-    - mysql:/var/lib/mysql
+    - mysql-backup:/var/lib/mysql
 
   backend:
     image: chaitanyaj293/backend:v1
