@@ -1,4 +1,4 @@
-FROM node:20
+FROM node:20.20.0-alpine3.23
 EXPOSE 8080
 ENV DB_HOST="mysql"
 RUN mkdir /opt/server
