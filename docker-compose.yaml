@@ -1,9 +1,8 @@
 version: "3"
 networks:
   expense:
-  driver: bridge
 volumes:
-  mysql-backup
+  mysql-backup:
 
 services:
   mysql:
