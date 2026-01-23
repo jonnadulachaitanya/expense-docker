@@ -1,6 +1,8 @@
 FROM node:20.20.0-alpine3.23
+#We can save more memory by using alpine images
 EXPOSE 8080
 ENV DB_HOST="mysql"
+RUN addgroup -S appgroup && adduser -S appuser -G appgroup
 RUN mkdir /opt/server
 WORKDIR /opt/server
 COPY /code/package.json .
